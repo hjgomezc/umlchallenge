@@ -16,27 +16,26 @@ public class Order {
  private int id;
  private OrderStatus status;
  private String shippingAddres;
- private double total;
+ private double total ;
  private List<LineItem> items;
  
 //Order objeto = new Order();
 
-    public Order(int id, OrderStatus status, String shippingAddres, double total, List<LineItem> items) {
+    public Order(int id, OrderStatus status, String shippingAddres, List<LineItem> items) {
         this.id = id;
         this.status = status;
         this.shippingAddres = shippingAddres;
-        this.total = total;
         this.items = items;
     }
 
- public void addItem(LineItem i){
-  items.add(i);
- }
+    public void addItem(LineItem i){
+     items.add(i);
+    }
 //public void addItem(LineItem i){items.add(i);}
     public double getTotal() {
-        
+        total = 0;
         for (int i=0; i<items.size();i++){
-        total= total+ items.get(i).getQuantity()*items.get(i).getPrice();
+            total= total+ items.get(i).getQuantity()*items.get(i).getPrice();
         }
         
          return total;

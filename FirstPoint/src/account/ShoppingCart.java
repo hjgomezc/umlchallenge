@@ -13,23 +13,24 @@ import java.util.List;
  * @author hgomez
  */
 public class ShoppingCart {
-   //private ArrayList<LineItem> items= new ArrayList<>(); Con esto se instancia
+    //private ArrayList<LineItem> items= new ArrayList<>(); Con esto se instancia
+
     private List<LineItem> items;
 
     public ShoppingCart(List<LineItem> items) {
         this.items = items;
     }
-    
-   public List<LineItem> getItems() {
-       return items; 
-   }
-    
-    public void addItem(LineItem i){
-     items.add(i);
+
+    public List<LineItem> getItems() {
+        return items;
     }
-    
-     public void cleanCart(){
-         items= new ArrayList<>();
-         System.out.println("Limpiar carro");
-     }
+
+    public void addItem(LineItem i) {
+        items.add(i);
+    }
+
+    public void cleanCart() {
+        items = new ArrayList<>();
+        System.out.println("Limpiar carro");
+    }
 }
