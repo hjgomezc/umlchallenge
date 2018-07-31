@@ -9,11 +9,11 @@ package segundop;
  *
  * @author hgomez
  */
-public class ProductBX implements ProductB{
-    
-    public void productName(){
-    System.out.println("Este es el producto BX");
-    }
-    
-}
+public class ProductBX implements ProductB {
 
+    @Override
+    public void printNameProduct() {
+        System.out.println("Este es el producto BX");
+    }
+
+}

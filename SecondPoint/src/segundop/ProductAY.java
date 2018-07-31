@@ -10,9 +10,10 @@ package segundop;
  * @author hgomez
  */
 public class ProductAY implements ProductA {
-    
-    public void productName(){
-    System.out.println("Este es el producto AY");
+
+    @Override
+    public void printNameProduct() {
+        System.out.println("Este es el producto AY");
     }
-    
+
 }

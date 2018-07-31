@@ -10,14 +10,17 @@ package segundop;
  * @author hgomez
  */
 public class Client {
-    
+
     // Revisar esto
-        AbstractFactory concreteFactoryX=new ConcreteFactoryX();
-        AbstractFactory concreteFactoryY=new ConcreteFactoryY();
-        ProductA ax = concreteFactoryX.createProductA();
-        ProductB bx = concreteFactoryX.createProductB();
-        ProductA ay= concreteFactoryY.createProductA();
-        ProductB by= concreteFactoryY.createProductB();
-  
+    AbstractFactory concreteFactoryX = new ConcreteFactoryX();
+    AbstractFactory concreteFactoryY = new ConcreteFactoryY();
     
+    ProductA ax = concreteFactoryX.createProductA();
+    ProductB bx = concreteFactoryX.createProductB();
+    ProductA ay = concreteFactoryY.createProductA();
+    ProductB by = concreteFactoryY.createProductB();
+    
+    
+    
+
 }

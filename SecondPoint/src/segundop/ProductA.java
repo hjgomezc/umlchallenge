@@ -9,9 +9,8 @@ package segundop;
  *
  * @author hgomez
  */
-public interface ProductA {
+public interface ProductA {   
     
-    
-    
+    void printNameProduct();
     
 }
